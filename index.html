@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOME</title>
+	<link rel="icon" href="logo.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bazooka">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<br>
+<div class="nav">
+
+<center>
+<ul>	
+	
+	<li><a href="index.html">HOME</a></li>
+	<li><a href="about.html">ABOUT</a></li>
+	<li><a href="product.html">PRODUCT</a></li>
+	<li><a href="contact.html">CONTACT</a></li>
+	<li><a href="feedback.html">FEEDBACK</a></li>
+</ul>
+</center>
+
+
+<br><br><br><br><br><br><br><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="11.jpg" style="width:600% height:700%">
+</div>
+
+<div class="mySlides fade">
+  <img src="10.jpg" style="width:600% height:700%">
+</div>
+
+<div class="mySlides fade">
+  <img src="8.jpg" style="width:600% height:700%">
+</div>
+<div class="mySlides fade">
+  <img src="12.jpg" style="width:600% height:700%">
+</div>
+<div class="mySlides fade">
+  <img src="9.jpg" style="width:600% height:700%">
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	</div>
+<br>
+	 	<div class="container">
+			<div class="row">
+				<div class="col-sm-7">
+				<br>
+					<h2 style="color:white;font-family:Trajan Pro;"><center>History</h2>
+					<p style="font-family:Ink Free;color:white;font-size:150%;">2014-2018: D'Rambutan</p>
+					<p style="font-family:Ink Free;color:white;font-size:120%;">It was the name when this shop was open that people are familiar with.This stall was conduct by the organizer.Serving different kind of dishes from Negeri Sembilan.<p>
+					<p style="font-family:Ink Free;color:white;font-size:150%;">2019: Salai Salai Waghih Fik</p>
+					<p style="font-family:Ink Free;color:white;font-size:120%;">Changed into more specific name it is because to be more specific about the dishes that they serving.Everyday there must be different kind of smoke dishes that will be serving by the shop.</p>
+				</div>
+				<div class="col-sm-5">
+				<br>	
+				<div class="img-wrap">
+				<img src="logo.jpeg">
+				</img>
+			</div>
+		</div>	
+	</div>
+
+<br><br><br><br><br>
+<div class="footer">
+	<p style="font-family:Lucida Fax;font-size:50%;text-align:center;color:white;">Copyright &#169; 2020 | All Rights Reserved.</p>
+</div>
+</body>
+</html>
